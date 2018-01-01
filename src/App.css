@@ -18,6 +18,137 @@
   font-size: large;
 }
 
+#addPositionRibbonMenu {
+
+}
+#addPositionRibbonContainer {
+  height: 40px;
+}
+
+#ribbonMenuContainerSilver {
+  background: #dedede url("/images/ribbonMenu_Background.png") -24px 0px no-repeat;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+#addPositionHeader {
+  cursor: pointer;
+	padding-left: 10px;
+  vertical-align: middle;
+}
+
+#addPositionText {
+  font-weight: bold;
+  font-size: 11px;
+  padding-left: 12px;
+}
+
+.addPositionTable_Head {
+  border: 1px solid #f9f2f4;
+	color: #f9f2f4;
+	background-color: #092A52;
+	font-size: 11px;
+	padding: 6px;
+}
+
+#addPositionTable_mainBody {
+	background-color: #dedede;
+}
+
+.addPositionTable_mainCell {
+	border: 2px solid #f9f2f4;
+	color: #f9f2f4;
+	background-color: #fff;
+}
+
+.addPositionTable_width1 {
+	width: 10%;
+}
+
+.addPositionTable_width2 {
+	width: 20%;
+}
+
+.addPositionTable_width3 {
+	width: 6%;
+}
+
+.addPositionTable_InputField {
+	height: 15px;
+	border-style: none;
+	text-align: left;
+	padding: 5px;
+}
+
+.addPositionTable_Dropdown {
+	height: 25px;
+	border-style: none;
+	width: 100%;
+}
+
+#securityInputText {
+	width: 95%;
+}
+
+#descriptionText {
+  width: 95%;
+}
+
+.addPositionTable_InputField {
+	height: 15px;
+	border-style: none;
+	text-align: left;
+	padding: 5px;
+}
+
+#addPositionButton {
+	float: right;
+	width: 60px;
+}
+
+#lookupIcon, #infoIcon {
+	padding: 0px 10% 0px 10%;
+	cursor: pointer;
+}
+
+#addPositionTableContainer {
+	max-width: 1555px;
+}
+
+#addPositionTable {
+	border-collapse: collapse;
+	width: 100%;
+}
+table, select, input {
+   font-size: 10px;
+   text-align: right;
+}
+#positionAdjusterGrid {
+   border-collapse: collapse;
+}
+
+th, td {
+  padding: 3px 10px;
+  margin: 0px;
+  text-align: left;
+  /*border-width: 0px 0px 1px 0px;*/
+  border-bottom: 1px solid #ddd;
+}
+#positionAdjusterTableHeader {
+  border-width: 0px 1px 1px 0px;
+	border-color: #ccc !important;
+	zoom: 1;
+	background-color: #eee;
+	font-weight: bold;
+
+	color: #333 !important;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

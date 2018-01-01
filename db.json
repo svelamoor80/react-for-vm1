@@ -1,0 +1,75 @@
+{
+    "positionAdjusterTable": {
+        "positionAdjusterRows": [
+            {
+            "security": "USD Cash",
+            "positionType": "Cash",
+            "currentQty": "500,000.000",
+            "tradeType": "",
+            "tradeQty": "-494,987.4900",
+            "tradeAmt": "",
+            "expectedQty": "5,012.5100",
+            "expectedAmt": "5,012.51",
+            "expectedPercent": "1.003",
+            "customPercent": "1.000",
+            "driftPercent": "0.003",
+            "relativeDrift": "0.250",
+            "CUSIP": "USD Cash",
+            "description": "USD Cash",
+            "glAmt": "0.00",
+            "glPercent": "0.000",
+            "lastPrice": "0.000000",
+            "tradeReason": "",
+            "moneyness": "",
+            "expiration": ""
+            },
+            {
+            "security": "ALL",
+            "positionType": "Long",
+            "currentQty": "0.000",
+            "tradeType": [
+                "Buy Long",
+                "Sell Short"
+            ],
+            "tradeQty": "993.000",
+            "tradeAmt": "42,718.86",
+            "expectedQty": "993.0000",
+            "expectedAmt": "42,718.86",
+            "expectedPercent": "8.544",
+            "customPercent": "8.544",
+            "driftPercent": "0.000",
+            "relativeDrift": "-0.003",
+            "CUSIP": "020002101",
+            "description": "Allstate Corp.",
+            "glAmt": "0.00",
+            "glPercent": "0.000",
+            "lastPrice": "43.020000",
+            "tradeReason": "Underweight",
+            "moneyness": "",
+            "expiration": ""
+            }
+        ],
+        "positionAdjusterTableColumnHeaders": {
+            "security": "Security",
+            "positionType": "Pos.Type",
+            "currentQuantity": "Cur. Qty.",
+            "tradeType": "Trade Type",
+            "tradeQty": "Trade Qty.",
+            "tradeAmount": "Trade Amt.",
+            "expectedQty": "Exp. Qty.",
+            "expectedAmt": "Exp.Amt.",
+            "expectedPercent": "Exp %",
+            "customPercent": "Custom %",
+            "driftPercent": "Drift %",
+            "relativeDrift": "Rel. Drift%",
+            "cusip": "CUSIP",
+            "description": "Description",
+            "glAmt": "G/L Amt.",
+            "glPercent": "G/L %",
+            "lastPrice": "LastPrice",
+            "tradeReason": "Trade Reason",
+            "moneyness": "Moneyness",
+            "expiration": "Expiration"
+        }
+    }
+}
