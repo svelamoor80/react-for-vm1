@@ -45,24 +45,24 @@ class AccountWorksheetToolbar extends Component {
 
     render = () => {
         return (
-            <div>
-            <div id="addPositionRibbonMenu">
-                <div id="addPositionRibbonContainer">
-                    <div id="ribbonMenuContainerSilver" onClick={(e) => this.toggleAddPositionTable(e) }>
-                        <span id="addPositionHeader">
-                            <img src={"/images/Collapse Down.png"} />
-                            <span id="addPositionText">Add a new position</span>
-                        </span>        
+            <div id="mainTable">
+                <div id="addPositionRibbonMenu">
+                    <div id="addPositionRibbonContainer">
+                        <div id="ribbonMenuContainerSilver" onClick={(e) => this.toggleAddPositionTable(e) }>
+                            <span id="addPositionHeader">
+                                <img src={"/images/Collapse Down.png"} />
+                                <span id="addPositionText">Add a new position</span>
+                            </span>        
+                        </div>
                     </div>
-                </div>
-            </div> 
-            {this.state.toggleTable ? <AccountWorksheetAddPositionTable newRow={this.addNewPosition} updateTable = {this.updatePositionAdjusterTable}/> : null} 
-            {this.state.tableRows.length ? (
-                    <PositionAdjusterTable rows={this.state.tableRows} headers={this.state.tableHeaders} />
-                ) : (
-                    <div>No data to display</div>
-                )
-            }
+                </div> 
+                {this.state.toggleTable ? <AccountWorksheetAddPositionTable newRow={this.addNewPosition} updateTable = {this.updatePositionAdjusterTable}/> : null} 
+                {this.state.tableRows.length ? (
+                        <PositionAdjusterTable rows={this.state.tableRows} headers={this.state.tableHeaders} />
+                    ) : (
+                        <div>No data to display</div>
+                    )
+                }
             </div>  
             
         );
@@ -122,7 +122,6 @@ class AccountWorksheetAddPositionTable extends Component {
                                 <th className="addPositionTable_Head">Type</th>
                                 <th className="addPositionTable_Head" colSpan={2} id="secOptionsHeader">Security/CUSIP</th>
                                 <th className="addPositionTable_Head">Description</th>
-                                <th className="addPositionTable_Head">Sleeve</th>
                                 <th className="addPositionTable_Head">Trade Type</th>
                                 <th className="addPositionTable_Head">Trade Amount(Optional)</th>
                                 <th className="addPositionTable_Head">Trade Quantity(Optional)</th>    
@@ -140,18 +139,12 @@ class AccountWorksheetAddPositionTable extends Component {
                                     <input type="text" id="securityInputText" ref="security" className="addPositionTable_InputField"/>
                                 </td>
                                 <td className="addPositionTable_width3">
-                                    <img id="infoIcon" src={"/images/Symbol Information 3.png"} /> 
-						            <img id="lookupIcon" src={"/images/Symbol Search.png"}/>
+                                    <span id="infoIcon"><img  src={"/images/Symbol Information 3.png"} /></span> 
+						            <span id="lookupIcon"><img  src={"/images/Symbol Search.png"}/></span>
                                 </td>
                                 <td className="addPositionTable_mainCell addPositionTable_width2">
                                     <input type="text" id="descriptionText" ref="description" className="addPositionTable_InputField" readOnly />
-                                </td>
-                                <td className="addPositionTable_mainCell addPositionTable_width1">
-                                    <select id="sleeveSelector" ref="sleeve" className="addPositionTable_Dropdown">
-                                        <option>1</option>
-                                        <option>2</option>
-                                    </select>
-                                </td>
+                                </td>  
                                 <td className="addPositionTable_mainCell addPositionTable_width1">
                                     <select id="tradeTypeSelector" ref="tradeType" className="addPositionTable_Dropdown">
                                         <option>Buy Long</option>
@@ -184,7 +177,7 @@ class PositionAdjusterTable extends Component {
     
     _headers(headers) {
         let columns =Object.keys(headers).map(value => 
-            <th>{headers[value]}</th>
+            <th className="positionAdjusterTableHead">{headers[value]}</th>
         );    
         return(
             <tr>{columns}</tr>

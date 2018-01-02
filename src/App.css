@@ -18,6 +18,10 @@
   font-size: large;
 }
 
+#mainTable {
+  margin:20px;
+  overflow-x: auto;
+}
 #addPositionRibbonContainer {
   height: 40px;
 }
@@ -67,14 +71,16 @@
 }
 
 .addPositionTable_width3 {
-	width: 6%;
+	width: 5%;
+  text-align: left;
+
 }
 
 .addPositionTable_InputField {
 	height: 15px;
 	border-style: none;
 	text-align: left;
-	padding: 5px;
+	/*padding: 5px;*/
 }
 
 .addPositionTable_Dropdown {
@@ -101,11 +107,15 @@
 #addPositionButton {
 	float: right;
 	width: 60px;
+  text-align: center;
 }
 
 #lookupIcon, #infoIcon {
-	padding: 0px 10% 0px 10%;
-	cursor: pointer;
+  text-align: center;
+  cursor: pointer;  
+  height: auto;
+  width:50%;
+  display: inline-block;
 }
 
 #addPositionTableContainer {
@@ -124,13 +134,32 @@ table, select, input {
    border-collapse: collapse;
 }
 
-th, td {
+.positionAdjusterTableHead {
+  border-right: 1px solid lightgrey;
+}
+#positionAdjusterGrid th, #positionAdjusterGrid td {
   padding: 3px 10px;
   margin: 0px;
   text-align: left;
-  /*border-width: 0px 0px 1px 0px;*/
+  border-bottom: 1px solid #ddd;
+  min-width: 70px;
+}
+
+#addPositionTable th {
+  padding: 3px 2px;
+  text-align: left;
   border-bottom: 1px solid #ddd;
 }
+
+#addPositionTable td {
+  padding: 0px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+#tradeAmnt, #tradeQty {
+  width: 100%;
+}
+
 #positionAdjusterTableHeader {
   border-width: 0px 1px 1px 0px;
 	border-color: #ccc !important;
