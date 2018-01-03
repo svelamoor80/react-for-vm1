@@ -47,6 +47,56 @@
             "tradeReason": "Underweight",
             "moneyness": "",
             "expiration": ""
+            },
+            {
+            "security": "BDK",
+            "positionType": "Long",
+            "currentQty": "0.000",
+            "tradeType": [
+                "Buy Long",
+                "Sell Short"
+            ],
+            "tradeQty": "866.000",
+            "tradeAmt": "42,711.12",
+            "expectedQty": "866.0000",
+            "expectedAmt": "42,711.12",
+            "expectedPercent": "8.542",
+            "customPercent": "8.544",
+            "driftPercent": "-0.002",
+            "relativeDrift": "-0.021",
+            "CUSIP": "091797100",
+            "description": "Black and Decker Corp.",
+            "glAmt": "0.00",
+            "glPercent": "0.000",
+            "lastPrice": "49.320000",
+            "tradeReason": "Underweight",
+            "moneyness": "",
+            "expiration": ""
+            },
+            {
+            "security": "MAY",
+            "positionType": "Long",
+            "currentQty": "0.000",
+            "tradeType": [
+                "Buy Long",
+                "Sell Short"
+            ],
+            "tradeQty": "605.000",
+            "tradeAmt": "17,587.35",
+            "expectedQty": "605.0000",
+            "expectedAmt": "17,587.35",
+            "expectedPercent": "3.517",
+            "customPercent": "3.518",
+            "driftPercent": "-0.001",
+            "relativeDrift": "-0.015",
+            "CUSIP": "577778103",
+            "description": "May Dept. Stores",
+            "glAmt": "0.00",
+            "glPercent": "0.000",
+            "lastPrice": "49.320000",
+            "tradeReason": "Underweight",
+            "moneyness": "",
+            "expiration": ""
             }
         ],
         "positionAdjusterTableColumnHeaders": {

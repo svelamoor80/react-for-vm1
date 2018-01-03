@@ -174,9 +174,8 @@ class AccountWorksheetAddPositionTable extends Component {
 }
 
 class PositionAdjusterTable extends Component {
-    
     _headers(headers) {
-        let columns =Object.keys(headers).map(value => 
+        let columns =Object.keys(headers).map(value =>     
             <th className="positionAdjusterTableHead">{headers[value]}</th>
         );    
         return(
